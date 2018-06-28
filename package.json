@@ -59,13 +59,13 @@
     ]
   },
   "now": {
-    "alias": "wip",
+    "alias": "wip-beta",
     "env": {
-      "APP_ID": "@app-id",
-      "LOG_LEVEL": "@log-level",
+      "APP_ID": "@beta-app-id",
+      "LOG_LEVEL": "@beta-log-level",
       "NODE_ENV": "production",
-      "PRIVATE_KEY": "@private-key",
-      "WEBHOOK_SECRET": "@webhook-secret"
+      "PRIVATE_KEY": "@beta-private-key",
+      "WEBHOOK_SECRET": "@beta-webhook-secret"
     }
   }
 }
