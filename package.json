@@ -33,7 +33,8 @@
   },
   "homepage": "https://github.com/wip/app#readme",
   "dependencies": {
-    "probot": "^7.0.0"
+    "probot": "^7.0.0",
+    "probot-metadata": "^1.0.0"
   },
   "devDependencies": {
     "coveralls": "^3.0.1",
