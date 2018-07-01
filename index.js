@@ -1,6 +1,7 @@
 module.exports = wip
 
 const handlePullRequestChange = require('./lib/handle-pull-request-change')
+const handleRequestedAction = require('./lib/handle-requested-action')
 
 function wip (app) {
   app.on([
@@ -10,4 +11,9 @@ function wip (app) {
     'pull_request.unlabeled',
     'pull_request.synchronize'
   ], handlePullRequestChange.bind(null, app))
+
+  app.on('check_run.requested_action', handleRequestedAction.bind(null, app))
+  app.on('check_run.rerequested', () => {
+    console.log('TBD: re-run check, e.g. in case configuration was changed')
+  })
 }
