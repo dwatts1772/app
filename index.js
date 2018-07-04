@@ -13,7 +13,4 @@ function wip (app) {
   ], handlePullRequestChange.bind(null, app))
 
   app.on('check_run.requested_action', handleRequestedAction.bind(null, app))
-  app.on('check_run.rerequested', () => {
-    console.log('TBD: re-run check, e.g. in case configuration was changed')
-  })
 }
