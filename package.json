@@ -65,6 +65,7 @@
     "alias": "wip-beta",
     "env": {
       "APP_ID": "@beta-app-id",
+      "APP_NAME": "WIP (beta)",
       "LOG_LEVEL": "@beta-log-level",
       "NODE_ENV": "production",
       "PRIVATE_KEY": "@beta-private-key",
